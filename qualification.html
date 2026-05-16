@@ -6,6 +6,7 @@
 <title>Qualifications</title>
 
 <style>
+
     body {
         font-family: Arial, sans-serif;
         background: #f6f7fb;
@@ -29,8 +30,10 @@
         margin-bottom: 30px;
     }
 
+    /* STACK CARDS VERTICALLY */
     .cards {
         display: flex;
+        flex-direction: column;
         gap: 25px;
     }
 
@@ -38,7 +41,6 @@
         background: white;
         border-radius: 12px;
         padding: 25px;
-        flex: 1;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
@@ -69,7 +71,7 @@
         font-size: 14px;
     }
 
-    /* Skills */
+    /* SKILLS */
     .skill {
         display: flex;
         justify-content: space-between;
@@ -77,26 +79,19 @@
         margin-bottom: 18px;
     }
 
-    .dots {
-        display: flex;
-        gap: 6px;
+    .stars {
+        color: #facc15;
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 
-    .dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: #d6dbe6;
-    }
-
-    .dot.filled {
-        background: #3b82f6;
-    }
 </style>
 </head>
+
 <body bgcolor="222831">
 
 <div class="container">
+
     <h1>Qualifications</h1>
     <div class="subtitle">Education & skills.</div>
 
@@ -104,6 +99,7 @@
 
         <!-- EDUCATION -->
         <div class="card">
+
             <h2>🎓 EDUCATION</h2>
 
             <div class="edu-item">
@@ -123,72 +119,43 @@
                 <div class="edu-title">10th (Secondary)</div>
                 <div class="edu-sub">Maharashtra Board of Secondary Education</div>
             </div>
+
         </div>
 
         <!-- SKILLS -->
         <div class="card">
+
             <h2>&lt;/&gt; SKILLS</h2>
 
             <div class="skill">
                 <span>C++</span>
-                <div class="dots">
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                </div>
+                <div class="stars">★★★★★</div>
             </div>
 
             <div class="skill">
                 <span>TypeScript</span>
-                <div class="dots">
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                </div>
+                <div class="stars">★★★★★</div>
             </div>
 
             <div class="skill">
                 <span>C Programming</span>
-                <div class="dots">
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot"></div>
-                </div>
+                <div class="stars">★★★★☆</div>
             </div>
 
             <div class="skill">
                 <span>Python</span>
-                <div class="dots">
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot"></div>
-                </div>
+                <div class="stars">★★★★☆</div>
             </div>
 
             <div class="skill">
                 <span>HTML</span>
-                <div class="dots">
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot filled"></div>
-                    <div class="dot"></div>
-                </div>
-            </div>
-
-           
+                <div class="stars">★★★★☆</div>
             </div>
 
         </div>
+
     </div>
+
 </div>
 
 </body>
